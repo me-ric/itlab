@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('list').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/loadging.css">
+    <title>Choose Your District</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Select Your District:</h1>
+    </div>
+    <div class="form">
+        <form action="pricing.html">
+            <select name="list" id="list" accesskey="target">
+                <option value='none' selected>Choose your district</option>
+                <option value="details.html">West Tripura</option>
+                <option value="detailsnorth.html">North Tripura</option>
+            </select>
+            <input type=button value="Go" onclick="goToNewPage()" />
+        </form>
+    </div>
+</body>
+</html>
